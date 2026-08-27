@@ -89,7 +89,7 @@
         extra_layer_1 {
             display-name = "SET";
             bindings = <
-&rgb_ug RGB_COLOR_HSB(278,100,35)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none  &kp K_POWER  &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_COLOR_HSB(264,100,35)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none  &kp K_POWER  &none  &none  &none  &none  &none  &none
 &bt BT_CLR                         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none  &none        &none  &none  &none  &none  &none  &none
 &none                              &none            &none            &sys_reset       &bootloader      &studio_unlock                       &none  &none  &none  &none  &none  &none
                                                                      &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none                                &none  &none  &none
