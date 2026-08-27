@@ -37,7 +37,7 @@
                 <&inc_dec_kp A A>,
                 <&inc_dec_kp A A>,
                 <&inc_dec_kp A A>,
-                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
+                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         NUM {
