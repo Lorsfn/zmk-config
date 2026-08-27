@@ -17,7 +17,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        BASE {
             display-name = "BASE";
 
             // --------------------------------------------------------------------------------
@@ -40,7 +40,7 @@
                 <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
 
-        lower_layer {
+        NUM {
             display-name = "NUM";
 
             // -----------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        raise_layer {
+        SYM {
             display-name = "SYM";
 
             // -----------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@
             bindings = <
 &kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &kp LG(ESCAPE)    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &none              &none             &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp LG(LESS_THAN)  &kp GREATER_THAN  &none     &none     &none                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&kp LSHFT  &kp LG(LESS_THAN)  &kp GREATER_THAN  &none     &none     &mo 4                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                                 &trans    &trans    &mo 3                               &mo 2      &trans     &trans
             >;
 
@@ -86,7 +86,7 @@
                 <&inc_dec_kp C_PREVIOUS C_NEXT>;
         };
 
-        extra_layer_1 {
+        SET {
             display-name = "SET";
             bindings = <
 &rgb_ug RGB_COLOR_HSB(264,100,35)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none  &kp K_POWER  &none  &none  &none  &none  &none  &none
@@ -96,12 +96,12 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        SPEC {
+            display-name = "SPEC";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
