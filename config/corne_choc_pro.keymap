@@ -22,11 +22,6 @@
     combos {
         compatible = "zmk,combos";
 
-        lockLinux {
-            bindings = <&kp LG(ESCAPE)>;
-            key-positions = <7 43>;
-        };
-
         lockMac {
             bindings = <&kp LG(LC(Q))>;
             key-positions = <7 43>;
@@ -92,7 +87,7 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &none             &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp TAB    &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &kp K_LOCK        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &none          &kp LA(S)         &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &mo 4                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                             &trans    &trans    &mo 3                               &mo 2      &trans     &trans
