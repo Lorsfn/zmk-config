@@ -19,6 +19,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        lockLinux {
+            bindings = <&kp LG(ESCAPE)>;
+            key-positions = <7 43>;
+        };
+
+        lockMac {
+            bindings = <&kp LS(LG(Q))>;
+            key-positions = <7 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,8 +92,8 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &kp K_LOCK        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &none          &none             &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp TAB    &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &none             &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &none          &kp LA(S)         &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &mo 4                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                             &trans    &trans    &mo 3                               &mo 2      &trans     &trans
             >;
@@ -94,7 +108,7 @@
         SET {
             display-name = "SET";
             bindings = <
-&rgb_ug RGB_COLOR_HSB(264,100,35)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none  &kp C_POWER  &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_COLOR_HSB(264,100,35)  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG  &none  &kp K_POWER  &none  &none  &none  &none  &none  &none
 &bt BT_CLR                         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none  &none        &none  &none  &none  &none  &none  &none
 &none                              &none            &none            &sys_reset       &bootloader      &studio_unlock                       &none  &none  &none  &none  &none  &none
                                                                      &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &none                                &none  &none  &none
