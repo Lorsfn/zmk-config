@@ -73,10 +73,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL           &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &kp LG(ESCAPE)    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &none              &none             &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp LG(LESS_THAN)  &kp GREATER_THAN  &none     &none     &mo 4                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                &trans    &trans    &mo 3                               &mo 2      &trans     &trans
+&kp TAB    &kp EXCL       &kp AT            &kp HASH  &kp DLLR  &kp PRCNT  &none  &kp LG(ESCAPE)    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &none          &none             &none     &none     &none      &none  &kp K_PLAY_PAUSE  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp LESS_THAN  &kp GREATER_THAN  &none     &none     &mo 4                               &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                            &trans    &trans    &mo 3                               &mo 2      &trans     &trans
             >;
 
             sensor-bindings =
