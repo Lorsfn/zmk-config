@@ -28,7 +28,7 @@
         };
 
         lockMac {
-            bindings = <&kp LS(LG(Q))>;
+            bindings = <&kp LG(LC(Q))>;
             key-positions = <7 43>;
         };
     };
